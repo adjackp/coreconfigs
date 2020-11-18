@@ -1,0 +1,6 @@
+ServerAliveInterval 120
+
+Host lxplus.cern.ch
+  HostName lxplus.cern.ch
+  ForwardX11 yes
+  User aparker
