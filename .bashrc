@@ -21,9 +21,3 @@ shopt -s direxpand
 xmodmap -e 'keycode 112='
 xmodmap -e 'keycode 117='
 
-export ROOTSYS=~/Desktop/root
-export PATH=$ROOTSYS/bin:$PATH
-export LD_LIBRARY_PATH=$ROOTSYS/lib:$PYTHONDIR/lib:$LD_LIBRARY_PATH
-export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
-
-source ~/root/bin/thisroot.sh
