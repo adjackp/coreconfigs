@@ -8,10 +8,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'valloric/youcompleteme'
-"       Plugin 'raimondi/delimitmate'
-"        Plugin 'tyru/open-browser.vim'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'valloric/youcompleteme'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 " " All of your Plugins must be added before the following line
@@ -23,8 +21,12 @@ let g:airline#extensions#tabline#enabled = 1
 "  "
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+let g:NERDCreateDefaultMappings = 0
+map <C-@> <plug>NERDCommenterToggle
+
 set number
 source $VIMRUNTIME/vimrc_example.vim
+
 "------------------------------------------------------------
 "" Indentation options {{{1
 "" Indentation settings according to personal preference.
@@ -45,6 +47,8 @@ set showcmd
 set hlsearch
 set ignorecase
 set smartcase
+
+set t_u7=
 
 syntax on
 set spelllang=en
